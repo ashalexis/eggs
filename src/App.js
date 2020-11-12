@@ -30,19 +30,19 @@ function App() {
             <nav className={theme === "light" ? "header" : "header-dark"}>
               <ul>
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link to="/eggs/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/chefs">Chefs</Link>
+                  <Link to="/eggs/chefs">Chefs</Link>
                 </li>
                 <li>
-                  <Link to="/games">Games</Link>
+                  <Link to="/eggs/games">Games</Link>
                 </li>
                 <li>
-                  <Link to="/eggstras">Eggstras</Link>
+                  <Link to="/eggs/eggstras">Eggstras</Link>
                 </li>
                 <li>
-                  <Link to="/contact">Contact</Link>
+                  <Link to="/eggs/contact">Contact</Link>
                 </li>
                 <li>
                   <div className="theme-switch-wrapper">
@@ -61,19 +61,19 @@ function App() {
 
             <div className="main">
               <Switch>
-                <Route exact path="/chefs">
+                <Route exact path="/eggs/chefs">
                   <Chefs />
                 </Route>
-                <Route exact path="/games">
+                <Route exact path="/eggs/games">
                   <Games />
                 </Route>
-                <Route exact path="/eggstras">
+                <Route exact path="/eggs/eggstras">
                   <Eggstras />
                 </Route>
-                <Route exact path="/contact">
+                <Route exact path="/eggs/contact">
                   <Contact />
                 </Route>
-                <Route exact path="/">
+                <Route exact path="/eggs/">
                   <Home theme={theme} />
                 </Route>
               </Switch>
