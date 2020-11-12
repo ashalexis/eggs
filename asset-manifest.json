@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/eggs/static/css/main.8739c165.chunk.css",
+    "main.js": "/eggs/static/js/main.e32e4b96.chunk.js",
+    "main.js.map": "/eggs/static/js/main.e32e4b96.chunk.js.map",
+    "runtime-main.js": "/eggs/static/js/runtime-main.86c0684a.js",
+    "runtime-main.js.map": "/eggs/static/js/runtime-main.86c0684a.js.map",
+    "static/js/2.8260df93.chunk.js": "/eggs/static/js/2.8260df93.chunk.js",
+    "static/js/2.8260df93.chunk.js.map": "/eggs/static/js/2.8260df93.chunk.js.map",
+    "static/js/3.c1b0cf80.chunk.js": "/eggs/static/js/3.c1b0cf80.chunk.js",
+    "static/js/3.c1b0cf80.chunk.js.map": "/eggs/static/js/3.c1b0cf80.chunk.js.map",
+    "index.html": "/eggs/index.html",
+    "static/css/main.8739c165.chunk.css.map": "/eggs/static/css/main.8739c165.chunk.css.map",
+    "static/js/2.8260df93.chunk.js.LICENSE.txt": "/eggs/static/js/2.8260df93.chunk.js.LICENSE.txt",
+    "static/media/Home.css": "/eggs/static/media/erol-ahmed-leOh1CzRZVQ-unsplash.cdafed2c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.86c0684a.js",
+    "static/js/2.8260df93.chunk.js",
+    "static/css/main.8739c165.chunk.css",
+    "static/js/main.e32e4b96.chunk.js"
+  ]
+}
