@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./components/globalStyles";
 import { lightTheme, darkTheme } from "./components/Themes";
-import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Link, Switch, Route } from "react-router-dom";
 import "./App.css";
 
 import Chefs from "./pages/chefs/Chefs";
@@ -25,24 +25,24 @@ function App() {
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <>
         <GlobalStyles />
-        <Router>
+        <Router basename="/">
           <div className="app">
             <nav className={theme === "light" ? "header" : "header-dark"}>
               <ul>
                 <li>
-                  <Link to="/eggs/">Home</Link>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/eggs/chefs">Chefs</Link>
+                  <Link to="/chefs">Chefs</Link>
                 </li>
                 <li>
-                  <Link to="/eggs/games">Games</Link>
+                  <Link to="/games">Games</Link>
                 </li>
                 <li>
-                  <Link to="/eggs/eggstras">Eggstras</Link>
+                  <Link to="/eggstras">Eggstras</Link>
                 </li>
                 <li>
-                  <Link to="/eggs/contact">Contact</Link>
+                  <Link to="/contact">Contact</Link>
                 </li>
                 <li>
                   <div className="theme-switch-wrapper">
@@ -61,19 +61,19 @@ function App() {
 
             <div className="main">
               <Switch>
-                <Route exact path="/eggs/chefs">
+                <Route exact path="/chefs">
                   <Chefs />
                 </Route>
-                <Route exact path="/eggs/games">
+                <Route exact path="/games">
                   <Games />
                 </Route>
-                <Route exact path="/eggs/eggstras">
+                <Route exact path="/eggstras">
                   <Eggstras />
                 </Route>
-                <Route exact path="/eggs/contact">
+                <Route exact path="/contact">
                   <Contact />
                 </Route>
-                <Route exact path="/eggs/">
+                <Route exact path="/">
                   <Home theme={theme} />
                 </Route>
               </Switch>
