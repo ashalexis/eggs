@@ -62,16 +62,16 @@ function App() {
             <div className="main">
               <Switch>
                 <Route exact path="/chefs">
-                  <Chefs />
+                  <Chefs theme={theme} />
                 </Route>
                 <Route exact path="/games">
-                  <Games />
+                  <Games theme={theme} />
                 </Route>
                 <Route exact path="/eggstras">
-                  <Eggstras />
+                  <Eggstras theme={theme} />
                 </Route>
                 <Route exact path="/contact">
-                  <Contact />
+                  <Contact theme={theme} />
                 </Route>
                 <Route exact path="/">
                   <Home theme={theme} />
