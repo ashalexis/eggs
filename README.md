@@ -11,3 +11,6 @@ The Figma mockup, also done by me, can be found at [eggs-figma](https://www.figm
 * Initialized the first ever draft of eggs
 * After much struggle, implemented a dark mode using `styled-components`
 * Learnt React Router from `react-router-dom` and used it to link to placeholder pages.
+
+**17/12/2020:** 
+* Added a mockup of the egg timer // timer not yet working
