@@ -67,7 +67,7 @@ function App() {
                   <DarkSwitch
                     checked={theme === "light" ? false : true}
                     className="darkSwitch"
-                    size="normal"
+                    size="medium"
                     onChange={toggleTheme}
                   />
                 </li>

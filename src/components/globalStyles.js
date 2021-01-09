@@ -5,6 +5,6 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.background};
     color: ${({ theme }) => theme.commonText};
     font-family: 'Raleway', sans-serif;
-    transition: all 0.50s linear;
+    transition: all 0.5s linear;
   }
 `;

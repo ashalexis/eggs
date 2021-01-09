@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Timer.css";
 
+//Material UI
+import { Grid } from "@material-ui/core";
+
 export default function Timer() {
   //egg methods
   const methods = {
@@ -30,16 +33,33 @@ export default function Timer() {
 
   return (
     <div className="timer">
-      <h1>Egg Timer</h1>
-      <h2>For all your perfectly cooked egg needs.</h2>
-      <p>
-        This egg timer is designed mainly for boiled eggs, in which the eggs are
-        in your pot, the water has boiled, and you've just turned the heat off.
-      </p>
+      <Grid container>
+        <Grid
+          container
+          direction="column"
+          justify="center"
+          alignItems="center"
+          xs="12"
+        >
+          <h1>Egg Timer</h1>
+          <h3>For all your perfectly cooked egg needs.</h3>
+          <p>
+            This egg timer is designed mainly for boiled eggs, in which the eggs
+            are in your pot, the water has boiled, and you've just turned the
+            heat off.
+          </p>
+        </Grid>
 
-      <div className="display">
-        <div className="timer">
-          <div className="timer-controls">
+        <Grid container>
+          <Grid
+            container
+            xs="12"
+            sm="6"
+            className="timer-controls"
+            direction="column"
+            justify="center"
+            alignItems="right"
+          >
             <button value="120" onClick={handleSet}>
               2 minutes: White not set, raw yolk.
             </button>
@@ -55,22 +75,34 @@ export default function Timer() {
             <button value="600" onClick={handleSet}>
               10 minutes: All set.
             </button>
-            <form name="customTime" id="custom">
-              <input
-                type="text"
-                name="minutes"
-                placeholder="Enter in minutes"
-              />
-            </form>
-          </div>
-        </div>
-        <div className="timeleft">
-          <h1>{timeLeft}</h1>
-          <button className="clear" onClick={handleClear}>
-            Clear
-          </button>
-        </div>
-      </div>
+            <Grid container justify="center">
+              <form name="customTime" id="custom">
+                <label htmlFor="minutes">Or enter your own time:</label>
+                <input
+                  type="text"
+                  name="minutes"
+                  placeholder="Enter in minutes"
+                />
+              </form>
+            </Grid>
+          </Grid>
+
+          <Grid container xs="12" sm="6" justify="center" alignItems="center">
+            <Grid
+              container
+              direction="column"
+              className="timeleft"
+              justify="center"
+              alignItems="center"
+            >
+              <h1>{timeLeft}</h1>
+              <button className="clear" onClick={handleClear}>
+                Clear
+              </button>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
     </div>
   );
 }

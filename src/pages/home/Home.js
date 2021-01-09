@@ -17,7 +17,7 @@ export default class Home extends Component {
             <h2>What are eggs?</h2>
             <p>something about eggs here</p>
             <img
-              src="../../images/siva-t-9gV3pwjKxKo-unsplash.jpg"
+              src="src/pages/home/imgs/siva-t-9gV3pwjKxKo-unsplash.jpg"
               alt="a flower of eggs"
             />
           </div>
@@ -26,7 +26,7 @@ export default class Home extends Component {
           <h2>Why eggs?</h2>
           <p>why not eggs here</p>
           <img
-            src="../..//images/rachael-gorjestani-g8xdO1Q1kIg-unsplash.jpg"
+            src="./imgs/rachael-gorjestani-g8xdO1Q1kIg-unsplash.jpg"
             alt="a nest of eggs"
           />
         </div>
@@ -35,7 +35,7 @@ export default class Home extends Component {
             <h2>What, you egg?</h2>
             <p>something about me here</p>
             <img
-              src="../..//images/annie-spratt-49Y9j30lGyg-unsplash.jpg"
+              src="./imgs/annie-spratt-49Y9j30lGyg-unsplash.jpg"
               alt="happy egg"
             />
           </div>
