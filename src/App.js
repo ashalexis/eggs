@@ -5,6 +5,10 @@ import { lightTheme, darkTheme } from "./components/Themes";
 import { HashRouter as Router, Link, Switch, Route } from "react-router-dom";
 import "./App.css";
 
+//Material UI
+import { withStyles } from "@material-ui/core/styles";
+import { Switch as ToggleSwitch } from "@material-ui/core";
+
 import Chefs from "./pages/chefs/Chefs";
 import Contact from "./pages/contact/Contact";
 import Eggstras from "./pages/eggstras/Eggstras";
@@ -21,6 +25,21 @@ function App() {
       setTheme("light");
     }
   };
+
+  const DarkSwitch = withStyles({
+    switchBase: {
+      color: "#1c1300",
+      "&$checked": {
+        color: "#ded4b9",
+      },
+      "&$checked + $track": {
+        backgroundColor: "#ded4b9",
+      },
+    },
+    checked: {},
+    track: {},
+  })(ToggleSwitch);
+
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <>
@@ -45,16 +64,12 @@ function App() {
                   <Link to="/contact">Contact</Link>
                 </li>
                 <li>
-                  <div className="theme-switch-wrapper">
-                    <label className="theme-switch" htmlFor="checkbox">
-                      <input
-                        type="checkbox"
-                        id="checkbox"
-                        onChange={toggleTheme}
-                      ></input>
-                      <div className="slider round"></div>
-                    </label>
-                  </div>
+                  <DarkSwitch
+                    checked={theme === "light" ? false : true}
+                    className="darkSwitch"
+                    size="normal"
+                    onChange={toggleTheme}
+                  />
                 </li>
               </ul>
             </nav>

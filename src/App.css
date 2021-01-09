@@ -14,62 +14,10 @@ li a {
   padding: 1rem;
 }
 
-/* switch toggle */
-.theme-switch-wrapper {
+.darkSwitch {
   float: right;
+  margin: 0px;
 }
-
-.theme-switch {
-  display: inline-block;
-  height: 2rem;
-  position: relative;
-  width: 3.5rem;
-}
-
-.theme-switch input {
-  display: none;
-}
-
-.slider {
-  background-color: #1c1300;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 0.4s;
-  border: 1px solid #1c1300;
-}
-
-.slider:before {
-  background-color: #ded4b9;
-  bottom: 4px;
-  content: "";
-  height: 26px;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 26px;
-}
-
-input:checked + .slider {
-  background-color: #ded4b9;
-}
-
-input:checked + .slider:before {
-  transform: translateX(1.5rem);
-  background-color: #1c1300;
-}
-
-.slider.round {
-  border-radius: 1rem;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
 /* header toggle */
 .header {
   background-color: #ebc45e;
